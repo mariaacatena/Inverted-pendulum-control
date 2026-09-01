@@ -1,0 +1,7 @@
+function Ts = sampling_time(L)
+beta_t=10;
+[M_a,M_f,omega_p,omega_c] = margin(L);
+Ts_min = pi/(5*beta_t*omega_c);
+Ts_max = 2*pi/(beta_t*omega_c);
+Ts = (Ts_min+Ts_max)/2;
+end
