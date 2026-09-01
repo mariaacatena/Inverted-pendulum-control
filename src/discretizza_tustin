@@ -1,0 +1,14 @@
+function R_z = discretizza_tustin(R, Ts)
+modello = ss(R);
+A = modello.A; 
+B = modello.B; 
+C = modello.C; 
+D = modello.D;
+I = eye(size(A));
+alpha = 1/2;
+A_alpha = I + Ts*(I - alpha*A*Ts)^-1*A;
+B_alpha_primo = (1-alpha)*Ts*(I - alpha*A*Ts)^-1*B;
+B_alpha_secondo = alpha*Ts*(I - alpha*A*Ts)^-1*B;
+z = tf('z', Ts);
+R_z = C*(z*I - A_alpha)^-1*(B_alpha_primo + B_alpha_secondo*z) + D;
+end
