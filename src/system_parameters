@@ -1,0 +1,8 @@
+% SYSTEM PARAMETERS
+m = 0.61; %kg
+mb = 0.05; %kg
+ma = 0.116; %kg
+l = 0.45; %m
+k = 0; %N/m
+beta = 0.1; %Ns/m
+g = 9.8; %m/s^2
