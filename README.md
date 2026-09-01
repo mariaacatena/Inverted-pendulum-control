@@ -42,3 +42,27 @@ run('src/main.m')
 ## Requirements
 MATLAB R2020+
 Control System Toolbox
+
+
+## Images
+### 1. Angle Controller - Root Locus
+<img width="1584" height="1066" alt="image" src="https://github.com/user-attachments/assets/c3c828c8-60cc-4471-ba34-44f5ca111e3f" />
+
+### 2. Angle Stabilization - Step response
+<img width="1582" height="1048" alt="image" src="https://github.com/user-attachments/assets/350d38cb-ecd5-423f-b67f-b3a1360087d1" />
+
+### 3. Specification Controller - Bode Plot
+<img width="1586" height="1054" alt="image" src="https://github.com/user-attachments/assets/00205cd0-91e6-416d-b1da-57f2a2e40a04" />
+
+### 4. Specification Controller - Step response
+<img width="1564" height="1038" alt="image" src="https://github.com/user-attachments/assets/bac0945c-3cc7-4897-8666-d9f427c154b4" />
+
+### 5. Position Controller - Root Locus
+<img width="1580" height="1048" alt="image" src="https://github.com/user-attachments/assets/50713391-d18d-4230-9f16-eaae8e02c292" />
+
+### 6. Position Controller - Step response
+<img width="1652" height="1038" alt="image" src="https://github.com/user-attachments/assets/c7cc9a40-ec52-4c45-8ad4-2cb97977b20f" />
+
+### 7. Laboratory test
+<img width="422" height="562" alt="image" src="https://github.com/user-attachments/assets/b7bc2c95-4a9a-48c9-978c-1e89955579de" />
+
