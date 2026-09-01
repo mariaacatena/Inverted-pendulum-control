@@ -1,0 +1,15 @@
+Meq = ma+mb+m;
+m12 = (ma*l+2*mb*l)/2;
+Jeq = (ma*l^2 + 3*mb*l^2)/3;
+M = Meq*Jeq - m12^2;
+
+% STATE-SPACE MODEL
+
+A = [0      1               0                                   0; 
+    0      -Jeq*beta/M     -(m12^2)*g/M                        0;
+    0      0               0                                   1;
+    0      m12*beta/M      (m12^3)*g/(Jeq*M) + m12*g/Jeq       0];
+B = [0; Jeq/M; 0; -m12/M];
+C_theta = [0 0 1 0];
+C_x = [1 0 0 0];
+D = 0;
