@@ -6,7 +6,7 @@ G_theta = tf(ss(A, B, C_theta, D));
 G_x = tf(ss(A, B, C_x, D));
 G_theta_x = G_x/G_theta;
 
-% ANGLE CONTRTOLLER designed using root-locus analysis
+% ANGLE CONTROLLER designed using root-locus analysis
 figure
 rlocus(-G_theta); 
 title('Root locus of G_{theta}');
@@ -24,7 +24,7 @@ R_theta = -k_theta*R_theta;
 L_theta = minreal(R_theta*G_theta);
 F = L_theta/(1+L_theta);
 step(F);
-title('Step reponse of F');
+title('Step response of F');
 
 
 
