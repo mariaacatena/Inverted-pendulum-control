@@ -7,7 +7,7 @@ The system consists of an inverted pendulum mounted on a mobile cart.
 -	Outputs: pendulum angle and cart position.
 The main goals are:
 -	Stabilize the pendulum at its unstable equilibrium position (angle=0);
--	Achieve a settling time < 1,2s
+-	Achieve a settling time < 1.2 s
 -	Achieve zero overshoot
 -	Stabilize the cart at the center of the track
 
@@ -18,7 +18,7 @@ Starting from the linearized equations of motion around the unstable equilibrium
 3.	Cart position stabilization: in order to decouple position and angle control, a new transfer function was derived by considering the angle as the input and the position as the output (obtained as the ratio of the two initial transfer functions), so as to achieve a cascaded control structure.
    
 ## Discretization
-The controllers were discretized using the Tustin method. The sampling time was selected within the admissible range calculated from the crossing pulsation.
+The controllers were discretized using the Tustin method. The sampling time was selected within the admissible range calculated from the crossover frequency.
 ## Laboratory test
 The controllers were implemented in an Arduino program (provided by the university) and were tested on a real physical pendulum. This allowed comparison between the real behavior and the simulated one.
 
