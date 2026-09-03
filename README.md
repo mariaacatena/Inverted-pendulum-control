@@ -19,6 +19,13 @@ Starting from the linearized equations of motion around the unstable equilibrium
    
 ## Discretization
 The controllers were discretized using the Tustin method. The sampling time was selected within the admissible range calculated from the crossover frequency.
+
+## Simulink Models
+Two Simulink models are included in the repository to validate the designed controllers:
+- Angle Control (Inner Loop): input = desired pendulum angle (Step from 0 to 0.1), output = pendulum angle
+- Position Control (Outer Loop): input = desired cart position(Step from 0 to 0.1), output = cart position
+To improve numerical robustness, the transfer function G_theta_x is reduced to its minimal realization: G_theta_x = minreal(G_theta_x).
+
 ## Laboratory test
 The controllers were implemented in an Arduino program (provided by the university) and were tested on a real physical pendulum. This allowed comparison between the real behavior and the simulated one.
 
@@ -31,6 +38,7 @@ The controllers were implemented in an Arduino program (provided by the universi
 •	Bode analysis
 •	Time-domain analysis
 •	Tustin discretization
+•	Simulink simulations
 
 ## How to run the project
 Clone the repository
@@ -63,6 +71,12 @@ Control System Toolbox
 ### 6. Position Controller - Step response
 <img width="1652" height="1038" alt="image" src="https://github.com/user-attachments/assets/c7cc9a40-ec52-4c45-8ad4-2cb97977b20f" />
 
-### 7. Laboratory test
+### 7. Angle simulation with Simulink
+<img width="1086" height="726" alt="image" src="https://github.com/user-attachments/assets/5a557538-6222-4e06-aab5-6082ee8e87af" />
+
+### 8. Position simulation with Simulink
+<img width="1090" height="706" alt="image" src="https://github.com/user-attachments/assets/6d3682e3-704c-461e-b23f-2c48fd47c336" />
+
+### 9. Laboratory test
 <img width="422" height="562" alt="image" src="https://github.com/user-attachments/assets/b7bc2c95-4a9a-48c9-978c-1e89955579de" />
 
